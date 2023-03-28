@@ -1,0 +1,10 @@
+C:\microchip\harmony\v2_06\apps\MINF\TP\TP4_USB_Interface\bin\Debug\TP4_USB_Interface.exe.config
+C:\microchip\harmony\v2_06\apps\MINF\TP\TP4_USB_Interface\bin\Debug\TP4_USB_Interface.exe
+C:\microchip\harmony\v2_06\apps\MINF\TP\TP4_USB_Interface\bin\Debug\TP4_USB_Interface.pdb
+C:\microchip\harmony\v2_06\apps\MINF\TP\TP4_USB_Interface\obj\Debug\TP4_USB_Interface.csprojAssemblyReference.cache
+C:\microchip\harmony\v2_06\apps\MINF\TP\TP4_USB_Interface\obj\Debug\TP4_USB_Interface.Form1.resources
+C:\microchip\harmony\v2_06\apps\MINF\TP\TP4_USB_Interface\obj\Debug\TP4_USB_Interface.Properties.Resources.resources
+C:\microchip\harmony\v2_06\apps\MINF\TP\TP4_USB_Interface\obj\Debug\TP4_USB_Interface.csproj.GenerateResource.cache
+C:\microchip\harmony\v2_06\apps\MINF\TP\TP4_USB_Interface\obj\Debug\TP4_USB_Interface.csproj.CoreCompileInputs.cache
+C:\microchip\harmony\v2_06\apps\MINF\TP\TP4_USB_Interface\obj\Debug\TP4_USB_Interface.exe
+C:\microchip\harmony\v2_06\apps\MINF\TP\TP4_USB_Interface\obj\Debug\TP4_USB_Interface.pdb
