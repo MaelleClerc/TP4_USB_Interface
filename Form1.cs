@@ -147,8 +147,40 @@ namespace TP4_USB_Interface
 
             // Envoi de la trame sur l'usb
             char[] chaine = message.ToCharArray();
-            serialPort1.PortName = comboBox1.SelectedItem.ToString();
-            serialPort1.Write(chaine, 0, 27);
+            if (serialPort1.IsOpen == false)
+            {
+                // Configuration du port
+                serialPort1.PortName = comboBox1.SelectedItem.ToString();
+                serialPort1.BaudRate = 57600;
+                serialPort1.Parity = Parity.None;
+                serialPort1.DataBits = 8;
+                serialPort1.StopBits = StopBits.One;
+                serialPort1.Handshake = Handshake.RequestToSend;
+
+                // Set the read/write timeouts
+                serialPort1.ReadTimeout = 500;
+                serialPort1.WriteTimeout = 500;
+
+                serialPort1.Open();
+
+            }
+            
+            if (serialPort1.IsOpen == true)
+            {
+                try
+                {
+                    serialPort1.Write(chaine, 0, chaine.Length);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString(), "Write Mess1");
+                }
+            }
+            else 
+            { 
+                MessageBox.Show("Port is not open", "Test PWM 2016");
+                //timer1.Stop();     // pour éviter problème en mode continu
+            }
         }
 
         private void Button2_Click(object sender, EventArgs e)
