@@ -106,6 +106,8 @@ namespace TP4_USB_Interface
             // Ajout de l'amplitude dans la trame
             if (valeur_amplitude < 10000)
             {
+                message += "0"; 
+
                 if (valeur_amplitude < 1000)
                 {
                     message += "0";
