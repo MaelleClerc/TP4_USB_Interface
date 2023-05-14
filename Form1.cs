@@ -146,8 +146,9 @@ namespace TP4_USB_Interface
             textBox1.Text = message + "#";
 
             // Envoi de la trame sur l'usb
+            char[] chaine = message.ToCharArray();
             serialPort1.PortName = comboBox1.SelectedItem.ToString();
-            //serialPort1.Write(message, 0, 27);
+            serialPort1.Write(chaine, 0, 27);
         }
 
         private void Button2_Click(object sender, EventArgs e)
